@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:"listcl",component:ClientComponent},
-  {path:"",component:HomeComponent}
+  
 
 ];
 
