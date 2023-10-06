@@ -1,0 +1,30 @@
+<p>client de la societe </p>
+<h1>bienvenu dans le site de societe</h1>
+<div>{{nom}}</div>
+<h2>code voiture :{{voiture1.code}}  </h2>
+<h2>immatriculation :{{voiture1.immat}} </h2>
+<h2>couleur :{{voiture1.color}} </h2>
+<h2>marque :{{voiture1.marque}} </h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>code du produit</th>
+                <th>designation</th>
+                <th>prix unitaire</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let pr of tabproduit">
+                <td>{{pr.codepr}}</td>
+                <td>{{pr.designation}}</td>
+                <td>{{pr.prix}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-success" (click)="modifclient()">modifier</button>
+    <button type="button" class="btn btn-danger" (click)="modif()">modifier</button>

@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>nom</th>
+        <th>description</th>
+        <th>quantite</th>
+        <th>prix</th>
+        <th>delete</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of items ;let indexOfelement=index;"></tr>>
+            <td>{{p.name}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.qty}}</td>
+            <td>{{p.price}}</td>
+            <td ><button type="button" class="btn btn-danger" (click)="remove(indexOfelement)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
